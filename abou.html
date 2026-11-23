@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <div class="humburger" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+            <div id="logo"><img src="pic/logo.png" alt="logo"></div>
+        </div>
+        <div class="navbar">
+            <ul class="flex">
+                <li><a class="yo" href="index.html">HOME</a></li>
+                <li><a class="yo"  href="abou.html">ABOUT US</a></li>
+                <li><a class="yo"  href="gallery.html">GALLERY</a></li>
+                <li><a class="yo"  href="contact.html">CONTACT US</a></li>
+                <li><a class="yo"  href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <img class="fa-regular fa-user" src="pic/fov.png" alt="">
+                <!-- <div class="num">0</div> -->
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li class="sidebar-list" id="sb-btn">
+                <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+            </li>
+            <li class="sidebar-list"><a href="index.html">HOME</a></li>
+            <li class="sidebar-list"><a href="about.html">ABOUT US</a></li>
+            <li class="sidebar-list"><a href="gallery.html">GALLERY</a></li>
+            <li class="sidebar-list"><a href="contact.html">CONTACT US</a></li>
+             <li class="sidebar-list"><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+    </div>
+    <div class="header-space"></div>
+
+<section class="hero-banner">
+  <img src="pic/about image.jpg" alt="Historical Monuments Banner">
+  
+  <div class="hero-content">
+    <h1>About Our Website</h1>
+    <p>Discover the timeless beauty, culture, and stories behind the world’s most iconic historical monuments.</p>
+  </div>
+</section>
+
+
+
+<section class="sec">
+  <h2 class="section-title">Who We Are</h2>
+  <p style="max-width:900px;margin:auto;text-align:center;">
+    The <strong>Historical Monuments</strong> website is an educational and informative platform created to
+    explore the world’s most famous historical monuments. Our goal is to provide users with authentic
+    information, historical background, cultural significance, and visual representation of heritage
+    sites from different regions of the world.
+  </p>
+</section>
+
+
+<section class="sec" style="background: #f4c430;">
+  <h2 class="section-title">Our Purpose</h2>
+  <p style="max-width:900px;margin:auto;line-height:1.7;">
+    This website is designed especially for students, researchers, travelers, and history lovers who
+    want to learn about ancient civilizations, architectural masterpieces, and world heritage sites.
+    Monuments are categorized zone-wise (North, South, East, and West) to make navigation easy and
+    organized.
+  </p>
+</section>
+
+<section class="sec">
+  <h2 class="section-title">What You Will Find</h2>
+  <ul style="max-width:800px;margin:auto;line-height:1.8;">
+    <li>✔ Zone-wise categorization of historical monuments</li>
+    <li>✔ Detailed history and descriptions of monuments</li>
+    <li>✔ Image gallery for visual exploration</li>
+    <li>✔ Contact and feedback options for users</li>
+    <li>✔ Travel and advertisement information for visiting monuments</li>
+  </ul>
+</section>
+
+
+<section class="sec" style="background:#f4c430;">
+  <h2 class="section-title">Our Vision</h2>
+  <p style="max-width:900px;margin:auto;line-height:1.7;">
+    Our vision is to spread awareness about the importance of historical monuments and encourage people
+    to preserve cultural heritage. By learning about the past, we can better understand our present and
+    protect history for future generations.
+  </p>
+</section>
+
+
+
+
+
+<footer class="m2d-footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <h3 class="footer-title">Historical Monuments</h3>
+        <p class="footer-desc">
+          Learn about the history, culture, and legacy behind famous monuments.”
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="header.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li> <img class="phone" src="pic/location.png" alt="">Korangi Karachi</li>
+          <li><img class="phone" src="pic/call.png" alt="">+92 32488990</li>
+          <li><img class="phone" src="pic/mail.png" alt="">info@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p style="font-size: 20px;">© 2025 — Project By <span class="dev">HISTORICAL MONUMENTS</span></p>
+    </div>
+  </footer>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

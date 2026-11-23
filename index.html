@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <div class="humburger" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+            <div id="logo"><img src="pic/logo.png" alt="logo"></div>
+        </div>
+        <div class="navbar">
+            <ul class="flex">
+                <li><a class="yo" href="index.html">HOME</a></li>
+                <li><a class="yo"  href="abou.html">ABOUT US</a></li>
+                <li><a class="yo"  href="gallery.html">GALLERY</a></li>
+                <li><a class="yo"  href="contact.html">CONTACT US</a></li>
+                <li><a class="yo"  href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <i class="fa-regular fa-heart"></i>
+                <!-- <div class="num">0</div> -->
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li class="sidebar-list" id="sb-btn">
+                <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+            </li>
+            <li class="sidebar-list"><a href="header.html">HOME</a></li>
+            <li class="sidebar-list"><a href="abou.html">ABOUT US</a></li>
+            <li class="sidebar-list"><a href="gallery.html">GALLERY</a></li>
+            <li class="sidebar-list"><a href="contact.html">CONTACT US</a></li>
+             <li class="sidebar-list"><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+    </div>
+    <div class="header-space"></div>
+
+<section class="hero-banner">
+  <img src="pic/head.jpg" alt="Historical Monuments Banner">
+
+  <div class="hero-content">
+    <h1>Historical Monuments</h1>
+    <p>Discover the timeless beauty, culture, and stories behind the world’s most iconic historical monuments.</p>
+  </div>
+</section>
+  <!-- ZONES SECTION -->
+  <section class="zones">
+    <center><h2>Explore Monuments by Zone</h2> </center>
+
+    <div class="zone-container">
+
+      <div class="zone-box">
+        <img src="pic/east m.jpg" alt="North Zone">
+        <h3>North Zone</h3>
+        <a href="north zone.html">View Monuments</a>
+      </div>
+
+      <div class="zone-box">
+        <img src="pic/south.png" alt="South Zone">
+        <h3>South Zone</h3>
+        <a href="south zone.html">View Monuments</a>
+      </div>
+
+      <div class="zone-box">
+        <img src="pic/north.jpg" alt="East Zone">
+        <h3>East Zone</h3>
+        <a href="eastzone.html">View Monuments</a>
+      </div>
+
+      <div class="zone-box">
+        <img src="pic/west.png" alt="West Zone">
+        <h3>West Zone</h3>
+        <a href="west.html">View Monuments</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- SEVEN WONDERS SECTION -->
+  <section class="wonders">
+    <h2>Seven Wonders of the World</h2>
+    <!-- 0 -->
+    <div class="wonders-container">
+      <div class="wonder-box">
+        <img src="pic/china.jpg" alt="Great Wall of China">
+        <h3>Great Wall of China</h3>
+        <a class="DOWLOAND" href="Great Wall of China.pdf" download>Download PDF</a>
+      </div>
+      <!-- 1 -->
+      <div class="wonder-box">
+        <img src="pic/petra.webp" alt="Petra">
+        <h3>Petra</h3>
+        <a class="DOWLOAND" href="Petra – Jordan .pdf" download>Download PDF</a>
+      </div>
+      <!-- 2 -->
+      <div class="wonder-box">
+        <img src="pic/img90.jpg" alt="Chichen Itza">
+        <h3>Chichen Itza</h3>
+        <a class="DOWLOAND" href="Chichen Itza.pdf" download>Download PDF</a>
+      </div>
+      <!-- 3 -->
+      <div class="wonder-box">
+        <img src="pic/colosseum.jpg" alt="Colosseum">
+        <h3>Colosseum</h3>
+        <a class="DOWLOAND" href="colosseum.pdf" download>Download PDF</a>
+      </div>
+      <!-- 4 -->
+      <div class="wonder-box">
+        <img src="pic/taj mahel.webp" alt="Taj Mahal">
+        <h3>Taj Mahal</h3>
+        <a  class="DOWLOAND" href="Taj Mahal.pdf" download>Download PDF</a>
+      </div>
+      <!-- 5 -->
+      <div class="wonder-box">
+        <img src="pic/Machu Picchu.png" alt="Machu Picchu">
+        <h3>Machu Picchu</h3>
+        <a  class="DOWLOAND" href="docs/taj-mahal.pdf" download>Download PDF</a>
+      </div>
+      <!-- 6 -->
+      <div class="wonder-box">
+        <img src="pic/chris.jpg" alt="Christ the Redeemer">
+        <h3>Christ the Redeemer</h3>
+       <a  class="DOWLOAND" href="Christ the Redeemer.pdf" download>Download PDF</a>
+      </div>
+    </div>
+  </section>
+  <section class="travel-ad">
+  <h2>Plan Your Visit</h2>
+  <p class="travel-sub">
+    Choose the best travel options to reach historical monuments easily.
+  </p>
+
+  <div class="travel-container">
+
+    <div class="travel-box">
+      <img src="pic/travel bus.jpg" alt="Bus Travel">
+      <h3>Bus Services</h3>
+      <p>
+        Affordable and comfortable bus services available from major cities
+        to nearby historical monuments.
+      </p>
+    </div>
+
+    <div class="travel-box">
+      <img src="pic/airplane.jpg" alt="Flight Travel">
+      <h3>Flight Services</h3>
+      <p>
+        Fast and convenient flights connecting popular tourist destinations
+        across the country.
+      </p>
+    </div>
+
+    <div class="travel-box">
+      <img src="pic/train.jpg" alt="Train Travel">
+      <h3>Train Services</h3>
+      <p>
+        Enjoy scenic journeys with well-connected railway routes to heritage
+        sites.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+  <footer class="m2d-footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <h3 class="footer-title">Historical Monuments</h3>
+        <p class="footer-desc">
+          Learn about the history, culture, and legacy behind famous monuments.”
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="header.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li> <img class="phone" src="pic/location.png" alt="">Korangi Karachi</li>
+          <li><img class="phone" src="pic/call.png" alt="">+92 32488990</li>
+          <li><img class="phone" src="pic/mail.png" alt="">info@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p style="font-size: 20px;">© 2025 — Project By <span class="dev">HISTORICAL MONUMENTS</span></p>
+    </div>
+  </footer>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

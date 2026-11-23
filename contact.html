@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="navbar-logo">
+            <div class="humburger" onclick="showSidebar()">
+                <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px"
+                    fill="#000">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                </svg>
+            </div>
+            <div id="logo"><img src="pic/logo.png" alt="logo"></div>
+        </div>
+        <div class="navbar">
+            <ul class="flex">
+                <li><a class="yo" href="index.html">HOME</a></li>
+                <li><a class="yo"  href="abou.html">ABOUT US</a></li>
+                <li><a class="yo"  href="gallery.html">GALLERY</a></li>
+                <li><a class="yo"  href="contact.html">CONTACT US</a></li>
+                <li><a class="yo"  href="feedback.html">FEEDBACK</a></li>
+            </ul>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+            <img class="fa-regular fa-user" src="pic/fov.png" alt="">
+                <!-- <div class="num">0</div> -->
+        </div>
+    </header>
+    <div class="sidebar">
+        <ul>
+            <li class="sidebar-list" id="sb-btn">
+                <i class="fa-solid fa-xmark" onclick="closeSidebar()"></i>
+            </li>
+            <li class="sidebar-list"><a href="header.html">HOME</a></li>
+            <li class="sidebar-list"><a href="about.html">ABOUT US</a></li>
+            <li class="sidebar-list"><a href="gallery.html">GALLERY</a></li>
+            <li class="sidebar-list"><a href="contact.html">CONTACT US</a></li>
+             <li class="sidebar-list"><a href="feedback.html">FEEDBACK</a></li>
+        </ul>
+    </div>
+    <div class="header-space"></div>
+
+<section class="hero-banner">
+  <img src="pic/img13.jpg" alt="Historical Monuments Banner">
+
+  <div class="hero-content">
+    <h1>We’re Here to Help</h1>
+    <p>Your questions and feedback matter to us. Contact us anytime.</p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+  <main>
+    <section class="contact-section">
+      <div class="contact-container">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <div class="contact-header">
+            <h1>Get In Touch</h1>
+            <p>We're here to help you with any questions about historical monuments, website content, or collaborations. Reach out to us through any of the following channels.</p>
+          </div>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="pic/location.png" alt="Location">
+              </div>
+              <div class="contact-text">
+                <h3>Our Location</h3>
+                <p>Korangi, Karachi, Pakistan</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="pic/call.png" alt="Phone">
+              </div>
+              <div class="contact-text">
+                <h3>Phone Number</h3>
+                <p>+92 324 88990</p>
+                <p>Mon-Fri: 9am-6pm</p>
+              </div>
+            </div>
+            
+            <div class="contact-item">
+              <div class="contact-icon">
+                <img src="pic/mail.png" alt="Email">
+              </div>
+              <div class="contact-text">
+                <h3>Email Address</h3>
+                <p>info@historicalmonuments.com</p>
+                <p>support@historicalmonuments.com</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="social-media">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+              <a href="#" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+              </a>
+              <a href="#" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter">
+              </a>
+              <a href="#" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram">
+              </a>
+              <a href="#" class="social-icon">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733561.png" alt="YouTube">
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div class="contact-form-container">
+          <div class="contact-header">
+            <h1>Send Us a Message</h1>
+            <p>Fill out the form below and we'll get back to you as soon as possible.</p>
+          </div>
+          
+          <form id="contactForm" class="contact-form">
+            <div class="form-group">
+              <label for="contact-name">Full Name <span class="required">*</span></label>
+              <input type="text" id="contact-name" name="name" required placeholder="Enter your full name">
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-email">Email Address <span class="required">*</span></label>
+              <input type="email" id="contact-email" name="email" required placeholder="Enter your email address">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject">
+                <option value="">Select a subject</option>
+                <option value="general">General Inquiry</option>
+                <option value="information">Information Request</option>
+                <option value="partnership">Partnership Opportunity</option>
+                <option value="feedback">Website Feedback</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="message">Your Message <span class="required">*</span></label>
+              <textarea id="message" name="message" required placeholder="Type your message here..."></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+          
+          <div id="successMessage" class="success-message">
+            <p>Thank you! Your message has been sent successfully. We'll get back to you soon.</p>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Map Section -->
+      <div class="map-container">
+        <div class="map-placeholder">
+          <div>
+            <h3>Our Location</h3>
+            <p>Karachi, Pakistan</p>
+            <p><em>(Map integration would go here)</em></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="ad">
+      <h3>Did You Know?</h3>
+      <p>Many historical monuments have visitor centers where you can learn more about their history and preservation efforts.</p>
+    </section>
+  </main>
+   <script>
+    // Contact form submission handling
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      // Get form data
+      const name = document.getElementById('contact-name').value;
+      const email = document.getElementById('contact-email').value;
+      const message = document.getElementById('message').value;
+      
+      // Simple validation
+      if (name && email && message) {
+        // Show success message
+        document.getElementById('successMessage').style.display = 'block';
+        
+        // Reset form
+        document.getElementById('contactForm').reset();
+        
+        // Hide success message after 5 seconds
+        setTimeout(function() {
+          document.getElementById('successMessage').style.display = 'none';
+        }, 5000);
+        
+        // In a real application, you would send data to server here
+        console.log('Contact form submitted:', { name, email, message });
+      } else {
+        alert('Please fill in all required fields.');
+      }
+    });
+  </script>
+   <footer class="m2d-footer">
+    <div class="footer-container">
+
+      <!-- Column 1 -->
+      <div class="footer-col">
+        <h3 class="footer-title">Historical Monuments</h3>
+        <p class="footer-desc">
+          Learn about the history, culture, and legacy behind famous monuments.”
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="header.html">Home</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+
+      <!-- Column 4 -->
+      <div class="footer-col">
+        <h4 class="footer-heading">Contact Us</h4>
+        <ul class="footer-contact">
+          <li> <img class="phone" src="pic/location.png" alt="">Korangi Karachi</li>
+          <li><img class="phone" src="pic/call.png" alt="">+92 32488990</li>
+          <li><img class="phone" src="pic/mail.png" alt="">info@gmail.com</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p style="font-size: 20px;">© 2025 — Project By <span class="dev">HISTORICAL MONUMENTS</span></p>
+    </div>
+  </footer>
+
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
